@@ -13,8 +13,8 @@ const routes = [ { path: '/', name: 'Home', Component: Home }, { path: '/about',
 
 function App() {
 	const onEnter = (node) => {
-    // enter animation
-    // console.log(node)
+		// enter animation
+		// console.log(node)
 		gsap.from([ node.children[0].firstElementChild, node.children[0].lastElementChild ], 0.6, {
 			y: 30,
 			delay: 0.6,
@@ -27,9 +27,9 @@ function App() {
 	}
 
 	const onExit = (node) => {
-    // exit animation
-    // console.log(node)
-    gsap.to([ node.children[0].firstElementChild, node.children[0].lastElementChild ], 0.6, {
+		// exit animation
+		// console.log(node)
+		gsap.to([ node.children[0].firstElementChild, node.children[0].lastElementChild ], 0.6, {
 			y: -30,
 			ease: 'power3.InOut',
 			stagger: {

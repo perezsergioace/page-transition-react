@@ -3,8 +3,8 @@ import Title from '../components/Title'
 
 const About = () => {
 	return (
-        <div className="inner">
-			<Title lineContent="This is the" lineContent2="about page"/>
+		<div className="inner">
+			<Title lineContent="This is the" lineContent2="about page" />
 			<div>
 				<p className="info">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -13,7 +13,7 @@ const About = () => {
 				</p>
 			</div>
 		</div>
-    )
+	)
 }
 
 export default About
