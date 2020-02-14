@@ -42,8 +42,8 @@ function App() {
 		<div>
 			<Header />
 			<div className="container">
-				{routes.map(({ path, Component }) => (
-					<Route key="name" path={path} exact>
+				{routes.map(({ name, path, Component }) => (
+					<Route key={name} path={path} exact>
 						{({ match }) => (
 							<CSSTransition
 								in={match != null}
